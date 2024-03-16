@@ -1,0 +1,1 @@
+# SSG48-gripper-docs

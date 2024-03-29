@@ -17,8 +17,8 @@ General specs:
 * Power supply: 24V
 * Idle power: 0.5W
 * Weight: 400 g
-* Maximum gripping force: 35N
-* Minimum gripping force: 2N
+* Maximum gripping force: 20N
+* Minimum gripping force: 1N
 * Operating temperature -5 to 65 deg
 * Communication interface: CAN bus
 * Material: PETG plastic
@@ -57,3 +57,9 @@ Check CAN protocol page if you wish to use gripper API.
 
 ## Torque curves
 
+## Spectral driver config
+
+Upload preconfigured BIN file. Re calibrate the motor after that. TODO<br />
+Using serial interface (On how to use it check this link) (What adapter to get check this link)<br />
+You will need send these commands:<br />
+#Gripper 1

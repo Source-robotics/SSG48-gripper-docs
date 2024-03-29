@@ -7,13 +7,9 @@
 
 # Estop
 
-TODO img how
-
 # Gear lubrication
 
 You can apply lithium greese to lubricate the gears of the gripper.
-
-TODO img how
 
 # Errors
 

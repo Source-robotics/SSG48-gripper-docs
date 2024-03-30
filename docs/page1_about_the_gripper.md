@@ -59,7 +59,8 @@ Check CAN protocol page if you wish to use gripper API.
 
 ## Spectral driver config
 
-Upload preconfigured BIN file. Re calibrate the motor after that. TODO<br />
-Using serial interface (On how to use it check this link) (What adapter to get check this link)<br />
-You will need send these commands:<br />
+If you bought the gripper it comes preconfigured and calibrated!<br />
+
+If you are building the gripper you will need to send the following command to it over serial:<br />
+
 #Gripper 1

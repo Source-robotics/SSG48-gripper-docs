@@ -63,4 +63,4 @@ If you bought the gripper it comes preconfigured and calibrated!<br />
 
 If you are building the gripper you will need to send the following command to it over serial:<br />
 
-#Gripper 1
+    #Gripper 1

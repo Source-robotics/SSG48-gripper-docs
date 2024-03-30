@@ -1,6 +1,8 @@
 # Control
 
-# Using GUI
+Primary control interface for SSG48 gripper is CAN bus. Secondary control mode is with UART. 
+
+# GUI
 
 <p align="left"> <img src="../assets/Gripper_GUI.PNG" alt="drawing" width="1200"/> <br /> </p> 
 
@@ -64,11 +66,10 @@ while True:
 
 # Using UART
 
-TODO how to use examples
-
+To use uart you will have to acces UART port on the SSG48 gripper. Unscrew coupler connector and connect uart adapter to the connector on the image. Note that it uses 3v3, using 5V can destroy your driver/gripper.
 
 # Using PAROL6 commander software
 
-TODO how to use examples
+PAROL6 commander software comes preconfigured to control SSG48 grippers. Go to the gripper tab of the GUI.
 
 

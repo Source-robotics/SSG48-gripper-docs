@@ -13,6 +13,8 @@ You can download [Coupler connector template STEP file]() here and adapt its des
 
 ### **PAROL6 installation**
 
+To use SSG48 gripper with PAROL6 robotic arm you will have to download coupler connector for PAROL6.
+
 === "Installation"
 
     Step 1 | Step 2 

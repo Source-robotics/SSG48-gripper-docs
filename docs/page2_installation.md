@@ -18,7 +18,7 @@ You can download [Coupler connector template STEP file]() here and adapt its des
     Step 1 | Step 2 
     ---- | ---- 
     Attach gripper to J6 motor  | Tighten up the screws of the shaf coupler (Marked with red circle, one on each side)
-    <p align="left"> <img src="../assets/gripper_parol1.PNG" alt="drawing" width="500"/> <br /> </p>  | <p align="left"> <img src="../assets/gripper_parol4.PNG" alt="drawing" width="500"/> <br /> </p>
+    <p align="left"> <img src="../assets/gripper_parol1.PNG" alt="drawing" width="500"/> <br /> </p>  | <p align="left"> <img src="../assets/gripper_parol4.png" alt="drawing" width="500"/> <br /> </p>
 
 ## **Electrical setup**
 

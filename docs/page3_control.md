@@ -5,22 +5,23 @@
 Primary control interface for SSG48 gripper is **CAN bus**. Secondary control mode is with **UART**. 
 
 !!! Tip annotate "" 
-    The gripper can:
+    **The gripper can:**
 
     * Control the force, speed and position of gripper jaws
     * Movements of the both jaws are always in sync
     * Movement is initiated with a "Send_gripper_data_pack" command
     * Gripper has built in object detection feature that will report back when a object is detected
 
-!!! Danger annotate "** Go to Application interfaces tab for more details about the gripper commands!**" 
+!!! Danger annotate "**Go to Application interfaces tab for more details about the gripper commands!**" 
+!!! Warning annotate "**The best way to learn how the gripper works is thru [examples!](https://github.com/PCrnjak/Spectral-BLDC-Python/tree/main/examples)**" 
 
 
 !!! Note annotate "" 
 
 ## **Working principle**
 
-* After every power up the gripper needs to be calibrated to function. 
-* Calling the calibration command will start the gripper movement.
+* After every power up the gripper needs to be calibrated to function.
+* Calling the calibration command will start the gripper movement. Calibration will find exact endpoints of the gripper.
 * After calibration the gripper needs to be activated.
 * After activation, gripper can be used (If there are any errors they need to be cleared also)
 * Now you can issues "Send_gripper_data_pack" commands that will move the gripper to the specified position with desired speed and torque presets.

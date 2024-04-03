@@ -17,8 +17,8 @@ General specs:
 * Power supply: 24V
 * Idle power: 0.5W
 * Weight: 400 g
-* Maximum gripping force: 20N
-* Minimum gripping force: 1N
+* Maximum gripping force: 80N
+* Minimum gripping force: 5N
 * Operating temperature -5 to 65 deg
 * Communication interface: CAN bus
 * Material: PETG plastic
@@ -27,7 +27,7 @@ General specs:
 <p align="left"> <img src="../assets/gripper_stroke.png" alt="drawing" width="650"/> <br /> </p> 
 
 
-## Pinout
+## **Pinout**
 <p align="left"> <img src="../assets/GRPCON.png" alt="drawing" width="650"/> <br /> </p> 
 
 To power the gripper you need to use 24V. <br />
@@ -35,29 +35,31 @@ You can send commands to the gripper using 5V CAN bus. <br />
 Check control page and learn how the gripper works. <br />
 Check CAN protocol page if you wish to use gripper API.
 
-## Dimensions
-   |   |   |
-    ---- | ---- 
-    <p align="left"> <img src="../assets/DIM2.PNG" alt="drawing" width="600"/> <br /> </p> | <p align="left"> <img src="../assets/DIM3.PNG" alt="drawing" width="535"/> <br /> </p> 
-    
-<p align="left"> <img src="../assets/DIM3.PNG" alt="drawing" width="500"/> <br /> </p> 
+## **Dimensions**
 
 
-### Dimensions with PAROL6 adapter
-
-<p align="left"> <img src="../assets/DIM1.PNG" alt="drawing" width="500"/> <br /> </p> 
-
-
-
-## 3D model
-
-[Link to the STEP model]()
-<p align="left"> <img src="../assets/GRIP_MODEL.PNG" alt="drawing" width="500"/> <br /> </p> 
+<p align="left"> <img src="../assets/DIM2.PNG" alt="drawing" width="700"/> <br /> </p> | 
+<p align="left"> <img src="../assets/DIM3.PNG" alt="drawing" width="700"/> <br /> </p> 
+<p align="left"> <img src="../assets/DIM4.PNG" alt="drawing" width="700"/> <br /> </p> 
 
 
-## Torque curves
+## **Dimensions with PAROL6 adapter**
 
-## Spectral driver config
+<p align="left"> <img src="../assets/DIM1.PNG" alt="drawing" width="700"/> <br /> </p> 
+
+
+
+## **3D model**
+
+[Link to the STEP model](https://github.com/PCrnjak/SSG-48-adaptive-electric-gripper/tree/main/STEPS)
+<p align="left"> <img src="../assets/GRIP_MODEL.PNG" alt="drawing" width="900"/> <br /> </p> 
+
+
+## **Torque curves**
+
+<p align="left"> <img src="../assets/Grip_force.PNG" alt="drawing" width="1000"/> <br /> </p> 
+
+## **Spectral driver config**
 
 If you bought the gripper it comes preconfigured and calibrated!<br />
 

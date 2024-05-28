@@ -91,7 +91,8 @@ As you can see from the plot relationship between current and applied force is l
 !!! Note annotate "Config" 
     If you bought the gripper it comes preconfigured and calibrated!
 
-If you are building the gripper you will need to send the following command to it over serial to place the BLDC controller in the gripper mode:<br />
+If you are building the gripper you will need to send the following commands to it over serial to place the BLDC controller in the gripper mode and enable the thermistor: <br />
 
     #Gripper 1
+    #Term 1
     #Save

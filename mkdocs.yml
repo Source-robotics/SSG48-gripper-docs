@@ -1,5 +1,6 @@
 site_name: Adaptive gripper
 site_url: https://PCrnjak.github.io/Adaptive_gripper/
+repo_url: https://github.com/Source-robotics/SSG48-gripper-docs/ 
 theme:
   name: material
   features:
@@ -12,6 +13,7 @@ theme:
     - content.code.annotation
     - content.code.copy
     - content.code.select
+    - content.action.edit
   logo: assets/Icon2.png
   language: en
   palette:
@@ -50,6 +52,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - md_in_html
   - pymdownx.superfences
@@ -63,6 +67,10 @@ markdown_extensions:
   - pymdownx.snippets
   - attr_list
   - md_in_html
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 copyright: |
   &copy; 2023 <a href="https://github.com/PCrnjak"  target="_blank" rel="noopener">Petar Crnjak</a>

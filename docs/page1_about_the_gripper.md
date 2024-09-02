@@ -96,3 +96,18 @@ If you are building the gripper you will need to send the following commands to 
     #Gripper 1
     #Term 1
     #Save
+
+## ** Gripper linear speed **
+
+Gripper min and max speed is commanded and returned in 0-255 format. <br /> </p> 
+In the Spectral Micro firmware these values are maped to ticks/s 255 = 80000 ticks/s while 0 = 40 ticks/s <br /> </p> 
+To calculate linear speed of the gripper jaws use this formula v[m/s] = () <br /> </p> 
+r = 0.006m
+
+$$
+ \text{ticks_per_s} = 40 + \left(\frac{80000 - 40}{255}\right) \times C 
+$$
+
+$$ \omega = \frac{\text{ticks_per_s}}{2^{14}} \times 2\pi $$
+
+$$ v = \omega \times r $$

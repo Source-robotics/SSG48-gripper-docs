@@ -1,4 +1,4 @@
-# Application interfaces
+# **Application interfaces**
 
 Since the SSG48 gripper is based on [spectral micro BLDC drivers](https://github.com/PCrnjak/Spectral-Micro-BLDC-controller), it inherits all of their control methods and functionality. <br />
 Here we will describe only ones that are needed for gripper operation. For full list of commands go [Here](https://source-robotics.github.io/Spectral-BLDC-docs/apage7_can/). <br />
@@ -13,7 +13,7 @@ Bits **10 - 7** of CAN ID represent Node ID. <br />
 Node IDs can range from 0 - 15 Meaning you can have maximum 16 different devices on one CAN bus.<br />
 
 !!! Note annotate "Default NODE ID" 
-    Default NODE ID of the gripper is 0!
+    Default NODE ID of the gripper is 0! To change it check the spectral micro docs.
 
 Bits **6 - 1** of the CAN ID represent Command ID.<br />
 Command IDs can range from 0 - 63.

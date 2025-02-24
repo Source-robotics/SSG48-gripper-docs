@@ -1,11 +1,11 @@
-# About the gripper
+# **About the gripper**
 
 
 <p align="left"> <img src="../assets/GRIP_CVR.png" alt="drawing" width="5000"/> <br /> </p>  
 
 SSG-48 adaptive electric gripper is a gripper based on **Spectral micro BLDC drivers**. It is a gripper capable of controlling its gripping force, making it perfect for assembly tasks and human-robot collaboration. Gripping force can be adjusted allowing you to grasp a wide range of items; from delicate and soft to rigid and sturdy.<br /> 
 
-STL files are **open source** allowing you to add a custom griping tool and attach it to any robotic arm or robot. 
+STL and STEP files are **open source** allowing you to add a custom griping tool and attach it to any robotic arm or robot. 
 
 SSG-48 adaptive electric gripper is available as a fully assembled gripper or you can build your own by following assembly manual.
 
@@ -39,8 +39,8 @@ After that you can follow the [assembly manual](https://github.com/PCrnjak/SSG-4
 
 Gripper can perform 2 types of graps:
 
-* External grasp - 
-* Internal grasp - allows you to grasp hollow objects
+* External grasp – Used to hold objects by applying pressure from the outside.
+* Internal grasp - Allows you to grasp hollow objects by applying pressure from the inside.
 
 ## **Pinout and connection**
 <p align="left"> <img src="../assets/GRPCON.png" alt="drawing" width="650"/> <br /> </p> 
@@ -84,6 +84,7 @@ As you can see from the plot relationship between current and applied force is l
 ## **CAN bus termination**
 
 !!! Tip annotate "**By default SSG48 gripper has terminated can bus with 120 ohm resistor!**" 
+This can be adjusted by opening the gripper to access the Spectral Micro BLDC driver inside and flipping its termination resistor switch.
 
 ## **Spectral driver config**
 
@@ -97,7 +98,7 @@ If you are building the gripper you will need to send the following commands to 
     #Term 1
     #Save
 
-## ** Gripper linear speed **
+## **Gripper linear speed**
 
 Gripper min and max speed is commanded and returned in 0-255 format. <br /> </p> 
 In the Spectral Micro firmware these values are maped to ticks/s 255 = 80000 ticks/s while 0 = 40 ticks/s <br /> </p> 

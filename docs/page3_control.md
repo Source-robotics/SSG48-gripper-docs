@@ -1,6 +1,4 @@
-# Control
-
-
+# **Control**
 
 Primary control interface for SSG48 gripper is **CAN bus**. Secondary control mode is with **UART**. 
 
@@ -9,7 +7,7 @@ Primary control interface for SSG48 gripper is **CAN bus**. Secondary control mo
 
     * Control the force, speed and position of gripper jaws
     * Movements of the both jaws are always in sync
-    * Movement is initiated with a "Send_gripper_data_pack" command
+    * Movement is initiated with a CAN "Send_gripper_data_pack" command
     * Gripper has built in object detection feature that will report back when a object is detected
 
 !!! Danger annotate "**Go to Application interfaces tab for more details about the gripper commands!**" 
@@ -41,14 +39,14 @@ The gripper will never send CAN commands on its own. Gripper will only respod to
 
 
 You can install GUI from [here!](https://github.com/PCrnjak/SSG-gripper-GUI) <br /> 
-To connect to gripper GUI you will have to have [CAN bus adapter for PC]().   <br /> </p> 
+To connect to gripper GUI you will have to have [CAN bus adapter for PC](https://source-robotics.com/products/canvas-usb-to-can-adapter).   <br /> </p> 
 
 
 <p align="left"> <img src="../assets/GUI2.png" alt="drawing" width="1200"/> <br /></p>
 
 * **Section 1** has a few commands important to operation of the gripper and connecting to it. 
 * **Section 2** has slider and entry boxes for commanding the gripper
-* **Section 3** has shows gripper status
+* **Section 3** shows gripper status
 * **Section 4** shows current gripper position and current
 * **Section 5** shows live plots of gripper position and current
 * **Section 6** shows FPS of the GUI and options for dark/light mode
@@ -61,7 +59,7 @@ To connect to gripper GUI you will have to have [CAN bus adapter for PC]().   <b
 First you will need to know the COM port where your USB to CAN adapter is connected. After that enter it to the COM port box in section one. 
 **Press connect.**
 !!! Note annotate "Default CAN Node ID"
-    **Default CAN Node ID is 0.**
+    **Default CAN Node ID is 0. To change it you check out spectral micro docs on how to change CANID [Link](https://source-robotics.github.io/Spectral-BLDC-docs/apage1_specs/)**
 
 After you have connected to the GUI you will need to **calibrate the gripper**. Press the calibrate button in the section one. The gripper will start to move and if calibration was success you will see "**Calibrated**" in section 3.    
 
@@ -134,6 +132,8 @@ while True:
 
 To use uart you will have to acces UART port on the SSG48 gripper. Unscrew coupler connector and connect uart adapter to the connector on the image. Note that it uses 3v3, using 5V can destroy your driver/gripper.
 To read mode about how to use UART with SSG48/Spectral micro BLDC go to this [link!](https://source-robotics.github.io/Spectral-BLDC-docs/apage6_uart/)
+
+Compatible USB to uart adapter can be bought here: [Link](https://source-robotics.com/products/usb-to-serial-adapter)
 
 Setup:
 

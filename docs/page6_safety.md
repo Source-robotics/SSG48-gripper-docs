@@ -1,4 +1,4 @@
-# Safety and Maintenance
+# **Safety and Maintenance**
 
 SSG48 gripper is not ment to be used with industrial robots. The gripper, robot and equipment used need to be evaluated with risk assessment and it is duty of the gripper integrator.
 
@@ -11,7 +11,7 @@ SSG48 gripper is not ment to be used with industrial robots. The gripper, robot 
 
 ## **Temperature warning**
 
-The gripper has built in termistor in motor coils that will stop it from reaching too high temperatures. That limit is 75 degrees. After it is reached the temperature error will be triggered and the gripper will go do idle mode.
+The gripper has built in termistor in motor coils that will stop it from reaching too high temperatures. That limit is 75 degrees. After it is reached the temperature error will be triggered and the gripper will go do idle mode. This temperature limit can be changed via UART commands-
 
 ## **Gripper force**
 
